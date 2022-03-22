@@ -1,0 +1,194 @@
+*{
+  padding: 0;
+  margin: 0 auto;
+  text-decoration: none;
+  /*list-style: none;*/
+  /*box-sizing: border-box;*/
+}
+
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:0px 0}
+
+
+/*HAUT DE PAGE*/
+
+nav{
+  background: white;
+  z-index: 1;
+  height: 50px;
+  width: 100%;
+  box-shadow: 0px 3px 2px rgba(0,0,0,0.19);
+  position: fixed;
+}
+label.logo{
+  color: white;
+  font-size: 25px;
+  line-height: 67px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+body{
+  /*background: #C9D1D9;*/
+}
+a.logo{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  
+  color: black;
+}
+a.nav{
+  color: black;
+  text-decoration: none;
+}
+nav ul{
+  float: right;
+  /*margin-right: 20px;*/
+}
+nav ul li{
+  padding-bottom: 5px;
+  display: inline-block;
+  line-height: 58px;
+  margin: 0 5px;
+  
+}
+nav ul li a{
+  color: white;
+  font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  /*text-transform: uppercase;*/
+}
+.checkbtn{
+  font-size: 25px;
+  color: white;
+  float: left;
+  line-height: 60px;
+  margin-left: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 23px;
+    padding-left: 80px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 65%;
+    height: 100vh;
+    background: #F1F1F1;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #1F618D;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+
+img.logo{
+  max-width: 150px;
+  margin-bottom: 23px;
+}
+
+img.image-annonce{
+  max-width: 200px;
+}
+
+input.qte{
+  max-width: 40px; 
+  padding: 5px;
+
+}
+
+
+
+select.select{
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+
+button.submit{
+  padding: 10px 13px;
+  border-radius: 3px;
+  border:  1px solid #007BFF;
+  cursor: pointer;
+  background: #007BFF;
+  color: white;
+}
+
+button.poursuivre{
+  padding: 10px 13px;
+  border-radius: 3px;
+  border:  1px solid grey;
+  cursor: pointer;
+  background: grey;
+  color: white;
+}
+button.vider{
+  padding: 10px 13px;
+  border-radius: 3px;
+  border:  1px solid #dc3545;
+  cursor: pointer;
+  background: #dc3545;
+  color: white;
+}
+h1.title{
+  color: #007BFF;
+}
+
+
+
+
+img.imgPdt{
+  max-width: 100%; width: 120px;
+}
+
+
+input.identification{
+  padding: 5px 20px;
+  border-radius: 3px;
+  border-color: black;
+}
+td.identification{
+  padding: 10px;
+}
+
+img.identification{
+  max-width: 200px
+}
+
+
+a.active{
+  color:  black;
+  border-bottom: 3px solid #ff1541;
+  text-decoration: none;
+
+}
